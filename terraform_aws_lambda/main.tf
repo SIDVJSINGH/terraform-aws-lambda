@@ -7,7 +7,6 @@ data "archive_file" "python_zip" {
 
 # Creating a lambda function with code from Zip files, and giving [REQUIRED] role to it
 resource "aws_lambda_function" "test_lambda" {
-  /* count = length(var.lambda_function_name) */
   filename         = "${path.module}/zip/python_files.zip"
   function_name    = var.lambda_function_name.lambda
   role             = aws_iam_role.iam_for_lambda_tf.arn

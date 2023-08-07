@@ -1,4 +1,7 @@
-name: Terraform AWS Lambda
+# create a file in the folder named ".github/worflows"
+# file name should be "main.yml"
+
+name: Terraform AWS
 
 on:
   push:
